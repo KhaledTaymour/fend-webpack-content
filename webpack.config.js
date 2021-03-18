@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const ESLintPlugin = require("eslint-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -22,4 +23,10 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/client/views/index.html",
+      filename: "./index.html",
+    }),
+  ],
 };

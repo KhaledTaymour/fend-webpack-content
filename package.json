@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/server/index.js",
     "remove dist folder": "rm -rf dist",
-    "build": "webpack"
+    "build-prod": "webpack --config webpack.prod.js",
+    "build-dev": "webpack --config webpack.dev.js"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,6 @@
     "eslint-webpack-plugin": "^2.5.2",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.2"
   }
 }

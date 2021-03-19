@@ -4,7 +4,7 @@ const ESLintPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   devtool: 'source-map',
   entry: "./src/client/index.js",
   module: {

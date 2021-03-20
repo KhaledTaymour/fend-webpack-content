@@ -9,4 +9,4 @@ import "./styles/header.scss";
 console.log(handleSubmit);
 console.log(checkForName);
 
-alert("starting point");
+export { checkForName, handleSubmit };
